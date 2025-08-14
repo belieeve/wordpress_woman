@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordPressテーマ診断ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 WordPressテーマ診断ツール</h1>
+            <p>あなたにぴったりのWordPressテーマを見つけましょう！</p>
+        </header>
+
+        <div id="quiz-container">
+            <div id="question-counter">
+                <span id="current-question">1</span> / <span id="total-questions">5</span>
+            </div>
+
+            <div id="question-card">
+                <h2 id="question-text"></h2>
+                <div id="options-container"></div>
+                <div class="navigation">
+                    <button id="prev-btn" disabled>前の質問</button>
+                    <button id="next-btn" disabled>次の質問</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="result-container" style="display: none;">
+            <h2>🎉 あなたにおすすめのWordPressテーマ</h2>
+            <div id="recommended-theme">
+                <div class="theme-card">
+                    <img id="theme-image" src="" alt="">
+                    <div class="theme-info">
+                        <h3 id="theme-name"></h3>
+                        <p id="theme-description"></p>
+                        <div class="theme-features">
+                            <h4>特徴：</h4>
+                            <ul id="theme-features-list"></ul>
+                        </div>
+                        <div class="theme-price">
+                            <span id="theme-price"></span>
+                        </div>
+                        <a id="theme-link" href="#" target="_blank" class="theme-btn">詳細を見る</a>
+                    </div>
+                </div>
+            </div>
+            <button id="restart-btn">もう一度診断する</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
